@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>The Oracle</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <audio id="bgSound" src="audio/ambient.mp3" loop></audio>
+<audio id="boomSound" src="audio/boom.mp3" ></audio>
+<audio id="memeSound" src="audio/meme.mp3" loop></audio>
+<div class="overlay"></div>
+
+<!-- Start Screen -->
+<div class="container" id="startScreen">
+  <h1 class="title">REVEALING YOUR BIGGEST SECRET USING YOUR BIGGEST FEAR</h1>
+  <p class="subtitle">Your future has already been written.</p>
+  <p class="warning">WARNING-This system requires absolute honesty....Any false input may result in......untinded actions</p>
+  <button id="enterBtn">ENTER</button>
+</div>
+
+<!-- Form Screen -->
+<div class="container hidden" id="formScreen">
+  <h2>Reveal your truth</h2>
+
+  <input type="text" id="name" placeholder="Enter your name" />
+  <input type="text" id="fear" placeholder="What is your deepest fear?" />
+
+  <button id="submitBtn">PROCEED</button>
+</div>
+
+<!-- Loading Screen -->
+<div class="container hidden" id="loadingScreen">
+  <h2 id="loadingText">Analyzing your destiny...</h2>
+</div>
+
+<!-- Result Screen -->
+<div class="container hidden" id="resultScreen">
+  <h2 id="resultText"></h2>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
